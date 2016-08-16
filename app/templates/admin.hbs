@@ -1,7 +1,9 @@
 <div class="stories-list">
   <ul>
     {{#each model as |story|}}
-      {{story-tile story=story}}
+      {{admin-tile story=story destroyStory="destroyStory"}}
     {{/each}}
   </ul>
 </div>
+
+{{new-story save2="save3"}}
