@@ -1,27 +1,24 @@
 {{#carousel-container}}
   {{#carousel-body}}
-
-  {{#each model as |story|}}
-    {{#carousel-item}}
-      <img class=
-      "img-responsive" src="{{story.image}}"/>
-    {{/carousel-item}}
-  {{/each}}
-
+    {{#each model as |story|}}
+      {{#carousel-item}}
+      {{#link-to 'story' story.id}}
+        <img class=
+        "img-responsive" src="{{story.image}}"/>
+      {{/link-to}}
+      {{/carousel-item}}
+    {{/each}}
   {{/carousel-body}}
 
   {{#carousel-arrow direction="left" class="line-arrow left"}}
-<span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="glyphicon glyphicon-chevron-left"></span>
   {{/carousel-arrow}}
 
   {{#carousel-arrow direction="right" class="line-arrow right"}}
-  <span class=
-"glyphicon glyphicon-chevron-right"></span>
+    <span class=
+  "glyphicon glyphicon-chevron-right"></span>
   {{/carousel-arrow}}
 {{/carousel-container}}
-
-
-
 
 <div class="stories-list">
   <ul>
