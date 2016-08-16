@@ -12,7 +12,7 @@ export default Ember.Route.extend({
     },
 
     destroyStory(story) {
-      story.destroyStory();
+      story.destroyRecord();
       this.transitionTo('admin');
     }
   }
