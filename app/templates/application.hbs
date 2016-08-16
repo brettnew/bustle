@@ -1,6 +1,8 @@
 <img src="/css/img/ad.png" alt="ad">
 <div class="navbar navbar-default" role="navigation">
-  <img class="nav-content" src="/css/img/bustle.png">
+  {{#link-to 'index'}}
+  <img class="nav-content" id="ad" src="/css/img/bustle.png">
+  {{/link-to}}
   <h5 class="nav-content">News</h5>
   <h5 class="nav-content">Entertainment</h5>
   <h5 class="nav-content">Fashion &amp; Beauty</h5>
@@ -9,7 +11,6 @@
   <h5 class="nav-content">Explore</h5>
   <h5 class="nav-content">About</h5>
   <h5 class="nav-content">{{#link-to 'admin'}}Admin{{/link-to}}</h5>
-  <h5 class="nav-content">{{#link-to 'index'}}Home{{/link-to}}</h5>
 </div>
 
 <div class="container">
